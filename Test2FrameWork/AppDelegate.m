@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Tagipedia/Tagipedia.h>
+#import <Tagipedia/TUtil.h>
 
 @interface AppDelegate ()
 
@@ -22,9 +23,13 @@
     newTBuilder.onNotificationPressed = ^(NSDictionary *data) {
         NSLog(@"data %@", data);
         // push your view controller here
+       [TUtil showAdDialog:data navigation: self.window.rootViewController];
     };
 //    [newTBuilder setDifferentBeaconNotifyPeriod:1000];
 //    [newTBuilder setSameBeaconNotifyPeriod:20000];
+    newTBuilder.onLoggedEventRecord = ^(NSDictionary *data){
+        NSLog(@"data %@",data);
+    };
     [newTBuilder build];
     return YES;
 }
