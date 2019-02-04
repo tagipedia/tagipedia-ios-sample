@@ -200,7 +200,6 @@
 				C359B15420440E7300B175BB /* Frameworks */,
 				C359B15520440E7300B175BB /* Resources */,
 				FD56AAFD2C403E2EADF2E372 /* [CP] Embed Pods Frameworks */,
-				0F5964A786A3AA96CF48C271 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,8 +218,6 @@
 				C359B16B20440E7300B175BB /* Sources */,
 				C359B16C20440E7300B175BB /* Frameworks */,
 				C359B16D20440E7300B175BB /* Resources */,
-				1668D22D578E2E8A03C2FFC4 /* [CP] Embed Pods Frameworks */,
-				4F776EBD4BBF0BB8074B0C98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,8 +237,6 @@
 				C359B17620440E7300B175BB /* Sources */,
 				C359B17720440E7300B175BB /* Frameworks */,
 				C359B17820440E7300B175BB /* Resources */,
-				8D1912D70F415538E1928818 /* [CP] Embed Pods Frameworks */,
-				829065D6E72B064C3B1F0EAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,96 +321,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F5964A786A3AA96CF48C271 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork/Pods-Test2FrameWork-resources.sh",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/ionicons.ttf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.otf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/foundation-icons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zocial-regular-webfont.ttf",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork/Pods-Test2FrameWork-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1668D22D578E2E8A03C2FFC4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkTests/Pods-Test2FrameWork-Test2FrameWorkTests-frameworks.sh",
-				"${PODS_ROOT}/../tagipedia-ios/Tagipedia/Tagipedia.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tagipedia.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWorkTests/Pods-Test2FrameWorkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F776EBD4BBF0BB8074B0C98 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkTests/Pods-Test2FrameWork-Test2FrameWorkTests-resources.sh",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/ionicons.ttf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.otf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/foundation-icons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zocial-regular-webfont.ttf",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWorkTests/Pods-Test2FrameWorkTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		829065D6E72B064C3B1F0EAA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkUITests/Pods-Test2FrameWork-Test2FrameWorkUITests-resources.sh",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/ionicons.ttf",
-				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.otf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/foundation-icons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zocial-regular-webfont.ttf",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWorkUITests/Pods-Test2FrameWorkUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8AE4799882C5C9A2F8CADE8E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,24 +337,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D1912D70F415538E1928818 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkUITests/Pods-Test2FrameWork-Test2FrameWorkUITests-frameworks.sh",
-				"${PODS_ROOT}/../tagipedia-ios/Tagipedia/Tagipedia.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tagipedia.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWorkUITests/Pods-Test2FrameWorkUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AED89FAA1F1366B0CD0AC6EE /* [CP] Check Pods Manifest.lock */ = {
