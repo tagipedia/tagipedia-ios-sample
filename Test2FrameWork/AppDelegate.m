@@ -30,18 +30,18 @@
     newTBuilder.onLoggedEventRecord = ^(NSDictionary *data){
         NSLog(@"data %@",data);
     };
-    newTBuilder.onMapButtonPressedRecord = ^(NSDictionary *data){
+    newTBuilder.onMapButtonPressed = ^(NSDictionary *data){
         NSLog(@"data %@", data);
         //you should dispatch to map to show navigation dialog
         // @{
         //      @"type": @"SHOW_NAVIGATION_DIALOG",
-        //      @"navigation_params": @{@"route_to": [data valueForKey:@"booth_id"]}
+        //      @"navigation_params": @{@"route_to": [data valueForKey:@"feature_id"]}
         // };
     };
     [newTBuilder build];
     //to register user with interests
     //this will show ads based on matching between ad interests and user interests otherwise it will show ads that was created without interests
-    [Tagipedia identifyUser:@"USER_NAME" UUID:@"UUID" interests:[NSArray arrayWithObjects:@"INTEREST", @"INTEREST", ..., nil]];
+    [Tagipedia identifyUser:@"USER_NAME" interests:[NSArray arrayWithObjects:@"INTEREST", @"INTEREST", ..., nil]];
     return YES;
 }
 
