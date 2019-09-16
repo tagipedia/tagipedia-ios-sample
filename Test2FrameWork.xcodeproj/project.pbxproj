@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A7CE92BE886538DE0456AF9 /* libPods-Test2FrameWorkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3F40022E6180515319034A /* libPods-Test2FrameWorkTests.a */; };
 		2558D2D2BFA2592D276143E0 /* libPods-Test2FrameWork-Test2FrameWorkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA7ED4925B9E31987C8876C /* libPods-Test2FrameWork-Test2FrameWorkTests.a */; };
+		3183A134232FF0B700F50EB0 /* TRegions example.json in Resources */ = {isa = PBXBuildFile; fileRef = 3183A133232FF0B700F50EB0 /* TRegions example.json */; };
 		3833AC165DF540A5C75D546C /* libPods-Test2FrameWork-Test2FrameWorkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2975BAB62BEBEEC7FDD1DE /* libPods-Test2FrameWork-Test2FrameWorkUITests.a */; };
 		70EA64558C6FF6802B59FECE /* libPods-Test2FrameWorkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 838E3DC10E6F34587A59AE52 /* libPods-Test2FrameWorkUITests.a */; };
 		8DA60208A84617F2AC760AF2 /* libPods-Test2FrameWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF0CE94D2315CEE7ED429FD /* libPods-Test2FrameWork.a */; };
@@ -43,6 +44,8 @@
 		04046CB3235CB3D171F89764 /* Pods-Test2FrameWork-Test2FrameWorkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2FrameWork-Test2FrameWorkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkUITests/Pods-Test2FrameWork-Test2FrameWorkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		175C2CBCB9427B82C2790A53 /* Pods-Test2FrameWork-Test2FrameWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2FrameWork-Test2FrameWorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkTests/Pods-Test2FrameWork-Test2FrameWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		262881BD3461A91DA71A3C0E /* Pods-Test2FrameWorkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2FrameWorkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test2FrameWorkUITests/Pods-Test2FrameWorkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3183A132232FD5DE00F50EB0 /* Test2FrameWork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test2FrameWork.entitlements; sourceTree = "<group>"; };
+		3183A133232FF0B700F50EB0 /* TRegions example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TRegions example.json"; sourceTree = "<group>"; };
 		3B4EE23BBB3A113901ABEE92 /* Pods-Test2FrameWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2FrameWorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test2FrameWorkTests/Pods-Test2FrameWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		46F01E8C463CCDA3B4AAC19F /* Pods-Test2FrameWork-Test2FrameWorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test2FrameWork-Test2FrameWorkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test2FrameWork-Test2FrameWorkUITests/Pods-Test2FrameWork-Test2FrameWorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BA7ED4925B9E31987C8876C /* libPods-Test2FrameWork-Test2FrameWorkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test2FrameWork-Test2FrameWorkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +160,8 @@
 		C359B15920440E7300B175BB /* Test2FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				3183A133232FF0B700F50EB0 /* TRegions example.json */,
+				3183A132232FD5DE00F50EB0 /* Test2FrameWork.entitlements */,
 				C359B15A20440E7300B175BB /* AppDelegate.h */,
 				C359B15B20440E7300B175BB /* AppDelegate.m */,
 				C359B15D20440E7300B175BB /* ViewController.h */,
@@ -199,7 +204,7 @@
 				C359B15320440E7300B175BB /* Sources */,
 				C359B15420440E7300B175BB /* Frameworks */,
 				C359B15520440E7300B175BB /* Resources */,
-				FD56AAFD2C403E2EADF2E372 /* [CP] Embed Pods Frameworks */,
+				8692F7CC31E85569421D3164 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +265,14 @@
 					C359B15620440E7300B175BB = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					C359B16E20440E7300B175BB = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -301,6 +314,7 @@
 				C359B16720440E7300B175BB /* LaunchScreen.storyboard in Resources */,
 				C359B16420440E7300B175BB /* Assets.xcassets in Resources */,
 				C359B16220440E7300B175BB /* Main.storyboard in Resources */,
+				3183A134232FF0B700F50EB0 /* TRegions example.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +335,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8692F7CC31E85569421D3164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test2FrameWork/Pods-Test2FrameWork-frameworks.sh",
+				"${PODS_ROOT}/../tagipedia-ios/Tagipedia/Tagipedia.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tagipedia.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test2FrameWork/Pods-Test2FrameWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8AE4799882C5C9A2F8CADE8E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,24 +405,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD56AAFD2C403E2EADF2E372 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork/Pods-Test2FrameWork-frameworks.sh",
-				"${PODS_ROOT}/Tagipedia/Tagipedia/Tagipedia.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tagipedia.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test2FrameWork/Pods-Test2FrameWork-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -566,6 +580,7 @@
 			baseConfigurationReference = 805DC968245F3A32E7A11D3B /* Pods-Test2FrameWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Test2FrameWork/Test2FrameWork.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26MWAQCN59;
 				INFOPLIST_FILE = Test2FrameWork/Info.plist;
@@ -581,6 +596,7 @@
 			baseConfigurationReference = A5B9DE884F2CB198DFE64CEE /* Pods-Test2FrameWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Test2FrameWork/Test2FrameWork.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26MWAQCN59;
 				INFOPLIST_FILE = Test2FrameWork/Info.plist;

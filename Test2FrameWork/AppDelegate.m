@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Tagipedia/Tagipedia.h>
 #import <Tagipedia/TUtil.h>
+#import <Tagipedia/TRegion.h>
 
 @interface AppDelegate ()
 
@@ -20,6 +21,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     Tagipedia *newTBuilder =[[Tagipedia alloc] initWithClientId:@"" clientSecret:@"" identifer:@"" UUID:@""];
+    NSMutableArray *tBeaconRegions = [[NSMutableArray alloc] init];
+    NSDictionary *beaconRegions = [self JSONFromFile];
+    for(NSDictionary* dict in [beaconRegions valueForKey:@"regions"]){
+        TRegion* tRegion = [[TRegion alloc] initWithUUID:[dict valueForKey:@"UUID"] major:[[dict valueForKey:@"major"] integerValue] minor:[[dict valueForKey:@"minor"] integerValue]];
+        [tBeaconRegions addObject:tRegion];
+    }
+    
+    [newTBuilder setTRegions:tBeaconRegions];
     newTBuilder.onNotificationPressed = ^(NSDictionary *data) {
         NSLog(@"data %@", data);
         // push your view controller here
@@ -44,6 +53,12 @@
     [Tagipedia identifyUser:@"USER_NAME" interests:[NSArray arrayWithObjects:@"INTEREST", @"INTEREST", ..., nil]];
     return YES;
 }
+- (NSDictionary *)JSONFromFile
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TRegions" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -66,6 +81,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [Tagipedia applicationDidBecomeActive];
 }
 
 
