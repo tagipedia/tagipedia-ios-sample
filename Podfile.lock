@@ -1,5 +1,5 @@
 PODS:
-  - Tagipedia (2.0.2)
+  - Tagipedia (2.2.1)
 
 DEPENDENCIES:
   - Tagipedia (from `https://github.com/tagipedia/tagipedia-ios.git`)
@@ -10,12 +10,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Tagipedia:
-    :commit: 74bcb2a5897d6540d769cbf57896974e3284a110
+    :commit: 37cf9a3b2634621cdf45a78a18bc1788d5d0c9a0
     :git: https://github.com/tagipedia/tagipedia-ios.git
 
 SPEC CHECKSUMS:
-  Tagipedia: 76a05d17fe408b633c05d4e6f98e9e263df24ba3
+  Tagipedia: 504745bc6d6d8e8b3136601883a0885f76548912
 
-PODFILE CHECKSUM: cc49a6b52410433995aa138a7340e573853dceef
+PODFILE CHECKSUM: 1831c97f342639b2bd00afc6d4b3c0540bcbd85e
 
 COCOAPODS: 1.5.3
