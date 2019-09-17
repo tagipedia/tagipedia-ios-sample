@@ -7,7 +7,6 @@ target 'Test2FrameWork' do
 
   # Pods for Test2FrameWork
     pod 'Tagipedia', :git => "https://github.com/tagipedia/tagipedia-ios.git"
-#pod 'Tagipedia', :path => "tagipedia-ios"
 
   target 'Test2FrameWorkTests' do
     inherit! :search_paths
