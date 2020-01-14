@@ -1,5 +1,5 @@
 PODS:
-  - Tagipedia (2.2.3)
+  - Tagipedia (2.2.4)
 
 DEPENDENCIES:
   - Tagipedia (from `https://github.com/tagipedia/tagipedia-ios.git`)
